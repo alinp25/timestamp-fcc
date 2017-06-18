@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timestamp Microservice</title>
+</head>
+<body>
+    <h1>API Project: Timestamp Microservice</h1>
+    <ol>
+        User Stories:
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date.</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it doesn't contain a date or a Unix timestamp, it returns null for those properties.</li>
+    </ol>
+    <p>
+        <h3>Example usage:</h3>
+        <ul>
+            <li>https://topaz-sea.glitch.me/December 15, 2015</li>
+            <li>https://topaz-sea.glitch.me/December%2015,%202015</li>
+            <li>https://topaz-sea.glitch.me/1450137600</li>
+        </ul>
+    </p>
+    <p>
+        <h3>Example output:</h3>
+        <span>{ "unix": 1450137600, "natural": "December 15, 2015" }</span>
+    </p>
+</body>
+</html>
